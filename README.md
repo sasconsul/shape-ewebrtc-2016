@@ -17,8 +17,6 @@ AT&T Developer Portal - Obtain App Key and App Secret
 
 Node Server - Configure and start your Node Server
 
-Xcode - Set up your Project
-
 
 #### AT&T Developer Portal
 To obtain an App Key and App Secret, complete the following steps:
@@ -32,9 +30,8 @@ To obtain an App Key and App Secret, complete the following steps:
 #### Node Server
 To configure and start a Node Server using the pre-built Server App, complete the following steps on the device that contains your development environment:
 
-* ~~Install NodeJS; We recommend version 4.2.3 and above.~~ NodeJS is already installed on the provided AT&T Chromium OS raspberry pi device.
-* ~~Follow the instructions found on GitHub to download a pre-built Node Server app with AT&T server-side libraries.~~
-A pre-loaded package downloaded on the provided AT&T Chromium OS raspberry pi device.
+* NodeJS is already installed on the provided AT&T Chromium OS raspberry pi SD cards.
+* A pre-built Node Server app with AT&T server-side libraries downloaded on the provided AT&T Chromium OS raspberry pi SD cards.
 * Log in to your Chromium device.
 * Press CTRL + ALT + T to open terminal.
 * In the terminal type `shell` to start running commands.
