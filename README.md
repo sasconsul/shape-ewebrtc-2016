@@ -8,17 +8,12 @@ This article describes the prerequisites and steps necessary to make this happen
 
 To simplify your development, the following pre-built components are provided. These can be imported into your JavaScript app project.
 
-Phone – Class used to handle media and networking. Functionality includes starting a session, starting a call, accepting a call, and ending a call.
-WebRTCListener – Class used to handle WebRTC events, such as an incoming call.
-DhsService - Class used to interact with the Developer Hosted Server (DHS).
-
 ## Prerequisite Activity
 Before you can begin coding Enhanced WebRTC functionality, you must complete the following prerequisites:
 
 AT&T Developer Portal - Obtain App Key and App Secret
 
 Node Server - Configure and start your Node Server
-
 
 #### AT&T Developer Portal
 To obtain an App Key and App Secret, complete the following steps:
@@ -40,15 +35,13 @@ To configure and start a Node Server using the pre-built Server App, complete th
 * In the terminal type `shell` to start running commands.
 * Change directory to `/home/chronos/user/` by typing `cd /home/chronos/user/`.
 * Configure this instance with the App Key and App Secret you obtained from the AT&T Developer Portal in the previous step.
-* Configure the host and port. Use a hostname or IP address that is accessible to your iOS test phone.
 * Install the Node dependencies.
 * Start the Node Server.
 * The pre-built Server App exposes an HTTPS endpoint for Access Token generation, and a e911id generation.
 
-__TIP__: By default, this Server App starts at https://127.0.0.1:9001. However, this address is inaccessible to a real device. To test with a real device, select a hostname or IP address that is accessible to your test phone. For more information on configuring and starting the pre-built Server App, please refer to this documentation on GitHub.
+__TIP__: By default, this Server App starts at https://127.0.0.1:9001. However, this address is inaccessible to a real device. To test with a real device, select a hostname or IP address that is accessible to your test device. For more information on configuring and starting the pre-built Server App, please refer to this documentation on GitHub.
 
 #### You can find more information at the resources listed below.
-AT&T Developer Platform
-Enhanced WebRTC API
-IOS Sample
-JavaScript SDK
+* [AT&T Developer Platform](https://developer.att.com/)
+* [Enhanced WebRTC API](https://developer.att.com/enhanced-webrtc)
+* [JavaScript SDK](https://developer.att.com/enhanced-webrtc/sdk)
