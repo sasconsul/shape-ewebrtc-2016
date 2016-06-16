@@ -28,15 +28,12 @@ To obtain an App Key and App Secret, complete the following steps:
 #### Node Server
 To configure and start a Node Server using the pre-built Server App, complete the following steps on the device that contains your development environment:
 
-* NodeJS is already installed on the provided AT&T Chromium OS raspberry pi SD cards.
-* A pre-built Node Server app with AT&T server-side libraries downloaded on the provided AT&T Chromium OS raspberry pi SD cards.
-* Log in to your Chromium device.
-* Press CTRL + ALT + T to open terminal.
-* In the terminal type `shell` to start running commands.
-* Change directory to `/home/chronos/user/` by typing `cd /home/chronos/user/`.
+* NodeJS, NPM, Chrmomium browser, and enhanced-webrtc SDK are already downloaded and installed on the provided AT&T reaspberry pi 3 SD cards.
+* A pre-built Node Server app with AT&T server-side libraries downloaded on the provided AT&T Raspbian OS raspberry pi 3 SD cards.
+* Change directory to `/home` by typing `cd ~` or `cd /home`.
 * Configure this instance with the App Key and App Secret you obtained from the AT&T Developer Portal in the previous step.
-* Install the Node dependencies.
-* Start the Node Server.
+* Install the Node dependencies by running `npm install`.
+* Start the Node Server `npm start`.
 * The pre-built Server App exposes an HTTPS endpoint for Access Token generation, and a e911id generation.
 
 __TIP__: By default, this Server App starts at https://127.0.0.1:9001. However, this address is inaccessible to a real device. To test with a real device, select a hostname or IP address that is accessible to your test device. For more information on configuring and starting the pre-built Server App, please refer to this documentation on GitHub.
