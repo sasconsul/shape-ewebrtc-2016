@@ -25,33 +25,33 @@ var ewebrtc_domain, app_tokens_url;
 
 function initDhsConfig() {
 
-  var xhr = new XMLHttpRequest();
+  // var xhr = new XMLHttpRequest();
 
-  xhr.open('GET', dhs_url);
+  // xhr.open('GET', dhs_url);
 
-  xhr.onreadystatechange = function() {
+  // xhr.onreadystatechange = function() {
 
-    if (xhr.readyState === 4 && xhr.status === 200) {
+  //   if (xhr.readyState === 4 && xhr.status === 200) {
 
-      var dhs_config = JSON.parse(xhr.responseText);
+  //     var dhs_config = JSON.parse(xhr.responseText);
 
-      // Get the domain
-      //
-      ewebrtc_domain = dhs_config.ewebrtc_domain;
-      app_tokens_url = dhs_config.app_tokens_url;
-      spnAIdDomain.textContent = ewebrtc_domain;
-      txtCalleeDomain.value = ewebrtc_domain;
+  //     // Get the domain
+  //     //
+  //     ewebrtc_domain = dhs_config.ewebrtc_domain;
+  //     app_tokens_url = dhs_config.app_tokens_url;
+      spnAIdDomain.textContent = 'cotoblue.com';
+      txtCalleeDomain.value = 'cotoblue.com';
 
-      info('Obtained Account Id Domain.');
+  //     info('Obtained Account Id Domain.');
 
-    } else {
+  //   } else {
 
-      error('Unable to obtain Account Id Domain. Response: ' + xhr.responseText);
-    }
+  //     error('Unable to obtain Account Id Domain. Response: ' + xhr.responseText);
+  //   }
 
-  };
+  // };
 
-  xhr.send();
+  // xhr.send();
 }
 
 
@@ -116,30 +116,37 @@ function createAccessToken(account_id) {
 
   // Create AccessToken
   //
-  var xhr = new XMLHttpRequest();
+  // var xhr = new XMLHttpRequest();
 
-  xhr.open('POST', app_tokens_url);
-  xhr.setRequestHeader("Content-Type", "application/json");
+  // xhr.open('POST', app_tokens_url);
+  // xhr.setRequestHeader("Content-Type", "application/json");
 
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
+  // xhr.onreadystatechange = function() {
+  //   if (xhr.readyState === 4 && xhr.status === 200) {
 
-      var response_json = JSON.parse(xhr.responseText);
-      var access_token = response_json.access_token;
+  //     var response_json = JSON.parse(xhr.responseText);
+  //     var access_token = response_json.access_token;
 
-      info('Access Token obtained. Setting up Phone... ');
-      setupPhone(account_id, access_token);
+  //     info('Access Token obtained. Setting up Phone... ');
+  //     setupPhone(account_id, access_token);
 
-    } else {
+  //   } else {
 
-      error('Error obtaining Access Token. Please check your server.');
+  //     error('Error obtaining Access Token. Please check your server.');
 
-    }
-  };
-  info('Requesting Access Token...');
-  xhr.send(JSON.stringify({
-    app_scope: 'ACCOUNT_ID'
-  }));
+  //   }
+  // };
+  // info('Requesting Access Token...');
+  // xhr.send(JSON.stringify({
+  //   app_scope: 'ACCOUNT_ID'
+  // }));
+
+  console.log('access token');
+
+  var token = document.location.search.split('?token=')[1];
+  console.log(token);
+
+  setupPhone(account_id, token);
 
 }
 
