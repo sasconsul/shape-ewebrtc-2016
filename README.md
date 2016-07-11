@@ -28,8 +28,8 @@ To obtain an App Key and App Secret, complete the following steps:
 #### Node Server
 To configure and start a Node Server using the pre-built Server App, complete the following steps on the device that contains your development environment:
 
-* NodeJS, NPM, Chrmomium browser, and enhanced-webrtc SDK are already downloaded and installed on the provided AT&T reaspberry pi 3 SD cards.
-* A pre-built Node Server app with AT&T server-side libraries downloaded on the provided AT&T Raspbian OS raspberry pi 3 SD cards.
+* NodeJS, NPM, Chrmomium browser, and enhanced-webrtc SDK are already downloaded and installed on the Raspberry Pi 3 SD cards provided by AT&T Support Personnel.
+* A pre-built Node Server app with AT&T server-side libraries downloaded on the provided AT&T Raspbian OS Raspberry Pi 3 SD cards.
 * Change directory to `/home` by typing `cd ~` or `cd /home`.
 * Configure this instance with the App Key and App Secret you obtained from the AT&T Developer Portal in the previous step.
 * Install the Node dependencies by running `npm install`.
