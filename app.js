@@ -49,7 +49,7 @@
  * more info, refere to documentation of att-dhs NPM module
  * at https://npmjs.org/att-dhs
  *---------------------------------------------------------
- * @author Raj Sesetti, AT&T Developer Program, DRT/LTA
+ * @author AT&T Developer Program, DRT/LTA
  *---------------------------------------------------------
  */
 
