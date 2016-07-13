@@ -31,6 +31,7 @@ To configure and start a Node Server using the pre-built Server App, complete th
 * NodeJS, NPM, Chromium browser, and enhanced-webrtc SDK are already downloaded and installed on the Raspberry Pi 3 SD cards provided by AT&T Support Personnel.
 * A pre-built Node Server app with AT&T server-side libraries downloaded on the provided AT&T Raspbian OS Raspberry Pi 3 SD cards.
 * Change directory to `/home/pi/shape-ewebrtc-2016`.
+* Pull new changes by running `git pull` in the `sahpe-ewebrtc-2016 folder`.
 * Open 'app.js' file.
 * Configure this instance with the App Key, App Secret and domain name you obtained from the AT&T Developer Portal in the previous step.
 * Install the Node dependencies by running `npm install`.
@@ -83,6 +84,7 @@ __TIP__: In case the microphone didn't work, try to select it manually from the 
 ##### WebRTC App Media Issues:
 ----
 * Make sure you are connected to Internet without VPN or other firewall restrictions.
+* If you are still not hearing audio on your Raspberry Pi 3 device, try to change the audio output by following the instructions on [Raspberry Pi Audio Configuration page](https://www.raspberrypi.org/documentation/configuration/audio-config.md).
 
 #### You can find more information at the resources listed below.
 * [AT&T Developer Platform](https://developer.att.com/)
