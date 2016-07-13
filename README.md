@@ -11,19 +11,9 @@ To simplify your development, the following pre-built components are provided. T
 ## Prerequisite Activity
 Before you can begin coding Enhanced WebRTC functionality, you must complete the following prerequisites:
 
-AT&T Developer Portal - Obtain App Key and App Secret
+Obtain App Key and App Secret - Consult an AT&T Support Person at WebRTC Table
 
 Node Server - Configure and start your Node Server
-
-#### AT&T Developer Portal
-To obtain an App Key and App Secret, complete the following steps:
-
-* Sign up on https://developer.att.com if you are not a member yet.
-* Upgrade to Premium level (using the Promo Code provided by the Hackathon organizers).
-* Log in to the Developer Portal.
-* Set up your Account ID domain if you have not already done so.
-* Create an app in which to use the Enhanced WebRTC API.
-* Make a note of the App Key and App Secret that are generated during this process.
 
 #### Node Server
 To configure and start a Node Server using the pre-built Server App, complete the following steps on the device that contains your development environment:
